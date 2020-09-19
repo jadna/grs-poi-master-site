@@ -1,0 +1,15 @@
+mysql://b19d4c9b90d93c:1e79a7c9@us-cdbr-east-02.cleardb.com/heroku_aa679765bbbd2da?reconnect=true
+
+host: us-cdbr-east-02.cleardb.com
+database: heroku_aa679765bbbd2da
+user: b19d4c9b90d93c
+senha: 1e79a7c9
+
+
+mysql://b5c0f5a2c5d745:b87461aa@us-cdbr-east-02.cleardb.com/heroku_9fb4d7df6d1110d?reconnect=true
+host: us-cdbr-east-02.cleardb.com
+database: heroku_9fb4d7df6d1110d
+user: b5c0f5a2c5d745
+senha: b87461aa
+
+heroku config:set DATABASE_URL=mysql://b5c0f5a2c5d745:b87461aa@us-cdbr-east-02.cleardb.com/heroku_9fb4d7df6d1110d?reconnect=true
