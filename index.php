@@ -52,10 +52,10 @@
                             <a class="nav-link js-scroll-trigger" href="#instrucoes">Instruções</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="cadastro.html"> Cadastro</a>
+                            <a class="nav-link js-scroll-trigger" href="cadastro.php"> Cadastro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="login.html"> Login</a>
+                            <a class="nav-link js-scroll-trigger" href="login.php"> Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="https://www.mapdevelopers.com/what-is-my-address.php" target="_blank"> Coordenada</a>
@@ -110,7 +110,7 @@
                 <p class="lead"></p>
                 <ol>
                     <!--li style="text-align: justify;">Acesse o link <a href="#avaliacao">da avaliação</a> e cadastre seus dados pessoais, como nome e e-mail. Essas informações serão utilizadas para futuro contato. Após o experimento, essas informações serão apagadas da base de dados.</li-->
-                    <li style="text-align: justify;">Acesse o link <a href="cadastro.html">cadastro</a> e crie seu usuário informando um e-mail e senha. Após o experimento, essas informações serão apagadas da base de dados.</li>
+                    <li style="text-align: justify;">Acesse o link <a href="cadastro.php">cadastro</a> e crie seu usuário informando um e-mail e senha. Após o experimento, essas informações serão apagadas da base de dados.</li>
                     <li style="text-align: justify;">Após a criação do usuário você será redirecionado para página de login, efetue o login para ter acesso ao sistema.</li>
                     <li style="text-align: justify;">Informe sua (ou uma preferida) posição geográfica (latitude e longitude). Se quiser saber sua coordenada acesse o link <a href="https://www.mapdevelopers.com/what-is-my-address.php" target="_blank">Coordenadas</a> no topo do site.</li>
                     <li style="text-align: justify;">Ao entrar no sistema avalie pelo menos 20 POIs, atribuindo notas de 1 a 5 (onde 1 indica que não gostou daquele local e 5 você gostou muito). Locais não visitados não precisam ser avaliados. NÃO ESQUEÇA DE CLICAR EM SALVAR!</li>
