@@ -90,6 +90,7 @@
                             <a class="nav-link js-scroll-trigger" href="logout.php"> Logout</a>
                         </li>
                     </ul>
+                    <h6 class="nav-link js-scroll-trigger" style="color: #fff;">Olá, <?=$_SESSION['userName']?></h6>
                 </div>
             </nav>
         </header>
