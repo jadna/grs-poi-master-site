@@ -1,3 +1,25 @@
+<?php
+    session_start();
+    $handle = fopen("dados.csv", "r");
+    $row = 0;
+    while ($line = fgetcsv($handle, 1000, ",")) {
+        if ($row++ == 0) {
+            continue;
+        }
+        
+        $pois[] = [
+            'poiId' => $line[0],
+            'latitude' => $line[1],
+            'longitude' => $line[2],
+            'name' => $line[3],
+            'preference' => $line[4]
+        ];
+    }
+
+    fclose($handle);
+?>
+
+
 <!doctype html>
 <html lang="en">
     <head>
@@ -37,6 +59,19 @@
         <link href="carousel.css" rel="stylesheet">
     </head>
     <body>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            function update(val, poi, idInput) {
+  
+               // alert(teste);
+                //alert("Radio button changed to " + val + "POIS: " + poi +" " + idInput);
+                if(val != 0){
+                    
+                    var id = "poiId"+idInput;
+                    document.getElementById(id).value = poi;
+                }                
+            }
+        </script>
         <header style="background-image: url(background.jpg);">
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                 <a class="navbar-brand" href="index.php">Group Systems Recommendation for POI</a>
@@ -49,7 +84,10 @@
                             <a class="nav-link js-scroll-trigger" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="cadastro.php"> Cadastro</a>
+                            <a class="nav-link js-scroll-trigger" href="https://www.mapdevelopers.com/what-is-my-address.php" target="_blank"> Coordenada</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="logout.php"> Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -77,87 +115,41 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="latitude">Latitude</label>
-                        <input type="latitude" class="form-control" id="latitude" placeholder="Latitude">
+                        <input type="text" class="form-control" name="latitude" id="latitude" placeholder="Latitude" required>
                     </div>
                     <div class="form-group col-md-6">
                         <label for="longitude">Longitude</label>
-                        <input type="longitude" class="form-control" id="longitude" placeholder="Longitude">
+                        <input type="text" class="form-control" name="longitude" id="longitude" placeholder="Longitude" required>
                     </div>
                 </div>
                 <hr class="featurette-divider">
-            
-                <div class="row">
-			        <div class="form-group col-lg-4">
-                        <label for="inputAddress">Address</label><br>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
-                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
-                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
-                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
-                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
-                            <input type="hidden" id="poiID" name="poiId" value="3487">
-                        </div>   
-                    </div>
-                    <div class="form-group col-lg-4">
-                        <label for="inputAddress">Address</label><br>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
-                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
-                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
-                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
-                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
-                            <input type="hidden" id="poiID" name="poiId" value="3487">
-                        </div>   
-                    </div>
-                    <div class="form-group col-lg-4">
-                        <label for="inputAddress">Address</label><br>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
-                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
-                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
-                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
-                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
-                            <input type="hidden" id="poiID" name="poiId" value="3487">
-                        </div>   
-                    </div>
-                </div>
-                <div class="row">
-			        <div class="form-group col-lg-4">
-                        <label for="inputAddress">Address</label><br>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
-                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
-                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
-                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
-                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
-                            <input type="hidden" id="poiID" name="poiId" value="3487">
-                        </div>   
-                    </div>
-                    <div class="form-group col-lg-4">
-                        <label for="inputAddress">Address</label><br>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
-                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
-                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
-                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
-                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
-                            <input type="hidden" id="poiID" name="poiId" value="3487">
-                        </div>   
-                    </div>
-                    <div class="form-group col-lg-4">
-                        <label for="inputAddress">Address</label><br>
-                        <div class="form-check form-check-inline">
-                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
-                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
-                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
-                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
-                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
-                            <input type="hidden" id="poiID" name="poiId" value="3487">
-                        </div>   
-                    </div>
-                </div>
-                
-                <button type="submit" class="btn btn-primary" id="salvar" name="salvar">Salvar</button>
+
+                <?php
+                    //Columns must be a factor of 12 (1,2,3,4,6,12)
+                    $numOfCols = 4;
+                    $rowCount = 0;
+                    $bootstrapColWidth = 12 / $numOfCols;
+                    foreach ($pois as $poi){
+                    if($rowCount % $numOfCols == 0) { ?> <div class="row"> <?php } 
+                        $rowCount++;
+                        $radio_button = "rating".$rowCount;
+                        $poiId = "poiId".$rowCount;?>  
+                            <br/>
+                            <div id="div_ratings" class="col-md-<?php echo $bootstrapColWidth; ?>">
+                                <label for=<?=$radio_button?>><?=$poi['name']?></label><br>
+                                <div class="form-check form-check-inline" style="margin-bottom: 20px;">
+                                    <input onclick="update(this.value, <?=$poi['poiId']?>, <?=$rowCount?>);" class="career_ratings" type="radio" id=<?=$radio_button?> name=<?=$radio_button?> value="1"/><label class="form-check-label" style="margin-right: 5px;">1</label>
+                                    <input onclick="update(this.value, <?=$poi['poiId']?>, <?=$rowCount?>);" class="career_ratings" type="radio" id=<?=$radio_button?> name=<?=$radio_button?> value="2"/><label class="form-check-label" style="margin-right: 5px;">2</label>
+                                    <input onclick="update(this.value, <?=$poi['poiId']?>, <?=$rowCount?>);" class="career_ratings" type="radio" id=<?=$radio_button?> name=<?=$radio_button?> value="3"/><label class="form-check-label" style="margin-right: 5px;">3</label>
+                                    <input onclick="update(this.value, <?=$poi['poiId']?>, <?=$rowCount?>);" class="career_ratings" type="radio" id=<?=$radio_button?> name=<?=$radio_button?> value="4"/><label class="form-check-label" style="margin-right: 5px;">4</label>
+                                    <input onclick="update(this.value, <?=$poi['poiId']?>, <?=$rowCount?>);" class="career_ratings" type="radio" id=<?=$radio_button?> name=<?=$radio_button?> value="5"/><label class="form-check-label" style="margin-right: 5px;">5</label>
+                                    <input type="hidden" name=<?=$poiId?> id=<?=$poiId?>>
+                                </div> 
+                            </div>
+                <?php
+                    if($rowCount % $numOfCols == 0) { ?> </div> <?php } } ?>
+              
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="salvar" name="salvar">Salvar</button>
             </form>
         </div>
 

@@ -1,0 +1,104 @@
+﻿poiId,latitude,longitude,name,preference
+997,-12.8968974,-38.3305804,Yan Ping,restaurant
+975,-13.0097406,-38.4949547,Cien Fuegos,restaurant
+974,-13.0152149,-38.4885180,RV Lounge,bar
+965,-12.9844319,-38.4371269,Tche Picanha,restaurant
+960,-12.9715240,-38.4142022,Cabana da Cely,restaurant
+869,-13.0091837,-38.5251507,Caranguejo de Sergipe,restaurant
+865,-13.0088255,-38.4631681,Cheiro de Pizza,restaurant
+863,-13.0054800,-38.5181284,Cantina Volpi,restaurant
+862,-13.0046592,-38.5175882,Mariposa  Joia,restaurant
+855,-13.0130506,-38.4896700,Fogo de Chao,restaurant
+848,-12.9842352,-38.4652032,Baby Beef,restaurant
+842,-13.0097114,-38.5301932,Caranguejo do Farol,restaurant
+836,-12.9790007,-38.5086834,Salsa,restaurant
+815,-13.0093087,-38.5271446,Varanda do Farol,pub
+809,-13.0090181,-38.5288425,Burger and Beer,pub
+808,-13.0098337,-38.5310167,Terraco do Farol,pub
+785,-13.0104845,-38.4901469,Portela Cafe,pub
+611,-12.9837138,-38.5202892,Amsterdam Pop Club,nightclub
+608,-13.0108728,-38.4941754,San Sebastian,nightclub
+606,-13.0090150,-38.5284931,Groove Bar,nightclub
+585,-13.0145451,-38.4881818,A Cubana,ice_cream
+583,-13.0062082,-38.5259899,Sorveteria da Barra,ice_cream
+576,-12.9704278,-38.4353544,Sorveteria da Ribeira,ice_cream
+492,-13.0088246,-38.5278392,Dominos Pizza,fast_food
+427,-13.0086722,-38.5268789,Bobs,fast_food
+421,-13.0134343,-38.4886672,Acaraje da Cira,fast_food
+415,-13.0112318,-38.4918489,Acaraje da Dinha,fast_food
+412,-12.9900014,-38.4613302,Subway,fast_food
+405,-13.0053955,-38.4551395,Pizza Hut,fast_food
+399,-12.9884845,-38.4679437,McDonalds,fast_food
+296,-12.9366631,-38.3947884,UCI Orient Paralela,cinema
+294,-12.9825970,-38.4634301,UCI Orient   Shopping da Bahia,cinema
+293,-12.9780646,-38.4545027,Cinemark,cinema
+292,-12.9712993,-38.4745043,Cinepolis,cinema
+269,-12.9138073,-38.3344583,Casa do Pao de Queijo,cafe
+262,-12.9144048,-38.3347877,Kopenhagen,cafe
+244,-12.9957650,-38.5269223,Doces Sonhos,cafe
+161,-13.0133481,-38.4898452,Public Bar,bar
+159,-13.0129811,-38.4903888,Boteco Sao Jorge,bar
+153,-13.0095034,-38.5305500,Habeas Copos,bar
+147,-13.0055394,-38.5267379,Santo Antonio Butequim,bar
+146,-13.0053952,-38.5265993,Guapo Mexican Bar,bar
+1270,-12.996128,-38.464154,Restaurante Terraço ,restaurant  
+1263,-12.983615,-38.435078,Boi Preto Prime ,restaurant  
+1044,-13.0032679,-38.5325300,Van Gogh,restaurant
+1024,-13.0086966,-38.4913001,Boteco do caranguejo,restaurant
+295,-12.9830472,-38.5137211,Orient Shopping Center Lapa,cinema
+1273,-13.009503,-38.525429,Restaurante Barravento ,restaurant  
+1275,-12.9763542,-38.5137602,Bahia Marina,bay
+1276,-12.9742541,-38.51336,Terminal Turistico Nautico da Bahia,bay
+1277,-12.941325937386747,-38.330140113830566,Praia de Stella Maris,Beach
+1278,-12.994726356440333,-38.44260633894478,Praia Jardim de Alah,Beach
+1279,-12.886292510209811,-38.294653476492016,Praia de Villas do Atlantico,Beach
+1280,-12.84442032811482,-38.466091978316,Praia Tubarão,Beach
+1281,-12.902601728582852,-38.65070813354239,Amoreiras,Beach
+1282,-12.97178493795919,-38.41705229431979,Praia Do Corsario,Beach
+1283,-12.989248219512497,-38.43906717232298,Praia de Armacao,Beach
+1284,-12.957658350404463,-38.392516499622594,Praia de Jaguaribe,Beach
+1285,-12.963880940399212,-38.40370623367744,Praia de Patamares,Beach
+1286,-12.923347816786753,-38.31663679711329,Praia do Flamengo,Beach
+1287,-12.948970936686472,-38.348952678165986,Pedra do Sal,Beach
+1288,-13.0101190326,-38.531048297882,Praia da Barra,Beach
+1289,-12.940287663540689,-38.378137214316865,Praia De Piata,Beach
+1290,-12.823473125815804,-38.48482032900392,Sao Tome de Paripe,Beach
+1291,-13.013216203954359,-38.48350620154367,Praia do Buracao,Beach
+1292,-13.010339656629734,-38.49979043109391,Praia da Paciencia,Beach
+1293,-12.811784647315005,-38.48985697169759,Inema,Beach
+1294,-13.003036081433905,-38.53251161530484,Praia do Porto da Barra,Beach
+1295,-12.896293988760503,-38.293570721604425,Barraca Buraco da Velha,Beach
+1296,-12.9797516,-38.5156999,Igreja e Convento de Sao Francisco,church
+1297,-12.9759231,-38.5149274,Mosteiro de São Bento,church
+1298,-12.9763542,-38.5137602,Basilica Santuario Nossa Senhora da Conceicao da Praia,church
+1299,-12.9786042,-38.5142374,Igreja Nossa Senhora da Ajuda,church
+1300,-12.9237266,-38.5102703,Basilica do Senhor do Bonfim,church
+1301,-12.9767364,-38.5532038,Farol da Barra,lighthouse
+1302,-12.9570655,-38.3558773,Farol de Itapua,lighthouse
+1303,-12.9750184,-38.5130314,Monumento da Cruz caida,monument
+1304,-12.9811921,-38.5167377,Relogio de Sao Pedro,monument
+1305,-12.973382,-38.5132113,Estatua Zumbi dos Palmares,monument
+1306,-12.9796383,-38.5119222,Museu de Arte Sacra,museum
+1307,-12.976136,-38.512478,Museu Nacional Da Cultura Afro-Brasileira,Museum
+1308,-12.914305,-38.492705,Solar Amado,Museum
+1309,-12.968884593914938,-38.50759656321193,Igreja Nossa Senhora do Carmo,Museum
+1310,-12.913231,-38.496406,Museu Itapagipe,Museum
+1311,-12.982446200484873,-38.520486850029634,Solar do Unhao,Museum
+1312,-12.97151559223007,-38.508395356087895,Fundacao Casa de Jorge Amado,Museum
+1313,-13.007660098128094,-38.48982465115848,A Casa do Rio Vermelho,Museum
+1314,-12.983077123785772,-38.51886046555211,Museu de Arte Moderna da Bahia,Museum
+1315,-12.97570529665289,-38.50572454264062,Academia de Letras da Bahia,Museum
+1316,-12.9117,-38.495339,History Museum,Museum
+1317,-12.9757241,-38.5120823,Elevador Lacerda,museum
+1318,-12.9760391,-38.5107585,Mercado Modelo,museum
+1319,-12.9287864,-38.5165355,Forte de Monte Serrat,museum
+1320,-13.0053654,-38.5022946,Morro do Cristo,museum
+1321,-12.9537032,-38.5774561,Forte de Monte Serrat,museum
+1322,-12.9875221,-38.5091047,Palacete das Artes,museum
+1323,-12.9836749,-38.5149412,Solar do Unhao MAM,museum
+1324,-12.9997622,-38.509676,Teatro Castro Alves,theater
+1325,-12.9997611,-38.509676,Teatro Jorge Amado,theater
+1326,-12.9742285,-38.5143807,Teatro Gregorio de Mattos ,theater
+1327,-12.9742283,-38.5143807,Teatro Sesc Senac Pelourinho,theater
+1328,-12.9843335,-38.5292607,Teatro Gamboa Nova,theater
+1329,-13.0058672,-38.5180016,Parque Zoobotanico de Salvador,zoo
