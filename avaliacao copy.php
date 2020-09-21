@@ -46,11 +46,14 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="index.php">Home</a>
+                            <a class="nav-link js-scroll-trigger" href="#">Avaliação</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="login.php">Login</a>
+                            <a class="nav-link js-scroll-trigger" href="cadastro.php"> Coordenadas</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link js-scroll-trigger" href="logout.php"> Logout</a>
+                      </li>
                     </ul>
                 </div>
             </nav>
@@ -73,30 +76,15 @@
         </div>
 
         <div class="container marketing">
-            <form method="POST" action="cadastro_bk.php">
-                <section id="cadastro">
+            <form method="POST" action="login.php">
+                <section id="login_div">
                     <div class="container">
-                        <div class="form-group row">
-                            <div class="col-lg-8 mx-auto" style="text-align: center;">
-                                <h2>Cadastro</h2>
-                            </div>
-                        </div>
-                        <div class="form-group row" style="text-align: center;">
-                            <label for="email" class="col-sm-2 col-form-label">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="login" name="login" aria-describedby="emailHelp" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group row" style="text-align: center;">
-                            <label for="senha" class="col-sm-2 col-form-label">Senha</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
-                            </div>
-                        </div>
-                        <div class="form-group row" style="text-align: center;">
-                            <div class="col-sm-12">
-                                <button value="cadastrar" id="cadastrar" name="cadastrar" type="submit" class="btn btn-primary btn-lg ">Salvar</button>
-                                <!--input class="btn btn-primary mb-2" type="submit" value="entrar" id="entrar" name="entrar"><br-->
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto" style="text-align: center;">
+                                <h2>Login</h2>
+                                <label>Email: </label><input type="email" name="login" id="login" placehold="email" autofocus><br>
+                                <label>Senha: </label><input type="password" name="senha" id="senha" placehold="senha" autofocus><br>
+                                <input type="submit" value="entrar" id="entrar" name="entrar"><br>
                             </div>
                         </div>
                     </div>
@@ -104,6 +92,13 @@
             </form>
             <hr class="featurette-divider">
         </div><!-- /.container -->
+
+        <div>
+          <h2 style="text-align: center;">Avaliação Experimental</h2>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEQ6H_0oK5UNhcfK194FADq836g4uGHp7h2YRv-Mn29ZKxsQ/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        
+          <hr class="featurette-divider">
+        </div>
 
 
         <!-- FOOTER -->

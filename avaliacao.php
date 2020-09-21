@@ -46,14 +46,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#">Avaliação</a>
+                            <a class="nav-link js-scroll-trigger" href="index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="cadastro.php"> Coordenadas</a>
+                            <a class="nav-link js-scroll-trigger" href="cadastro.php"> Cadastro</a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link js-scroll-trigger" href="logout.php"> Logout</a>
-                      </li>
                     </ul>
                 </div>
             </nav>
@@ -75,31 +72,94 @@
             </div>
         </div>
 
-        <div class="container marketing">
-            <form method="POST" action="login.php">
-                <section id="login_div">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 mx-auto" style="text-align: center;">
-                                <h2>Login</h2>
-                                <label>Email: </label><input type="email" name="login" id="login" placehold="email" autofocus><br>
-                                <label>Senha: </label><input type="password" name="senha" id="senha" placehold="senha" autofocus><br>
-                                <input type="submit" value="entrar" id="entrar" name="entrar"><br>
-                            </div>
-                        </div>
+        <div class="container">
+            <form method="POST" action="avaliacao_bk.php">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="latitude">Latitude</label>
+                        <input type="latitude" class="form-control" id="latitude" placeholder="Latitude">
                     </div>
-                </section>
+                    <div class="form-group col-md-6">
+                        <label for="longitude">Longitude</label>
+                        <input type="longitude" class="form-control" id="longitude" placeholder="Longitude">
+                    </div>
+                </div>
+                <hr class="featurette-divider">
+            
+                <div class="row">
+			        <div class="form-group col-lg-4">
+                        <label for="inputAddress">Address</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
+                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
+                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
+                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
+                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
+                            <input type="hidden" id="poiID" name="poiId" value="3487">
+                        </div>   
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="inputAddress">Address</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
+                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
+                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
+                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
+                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
+                            <input type="hidden" id="poiID" name="poiId" value="3487">
+                        </div>   
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="inputAddress">Address</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
+                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
+                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
+                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
+                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
+                            <input type="hidden" id="poiID" name="poiId" value="3487">
+                        </div>   
+                    </div>
+                </div>
+                <div class="row">
+			        <div class="form-group col-lg-4">
+                        <label for="inputAddress">Address</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
+                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
+                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
+                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
+                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
+                            <input type="hidden" id="poiID" name="poiId" value="3487">
+                        </div>   
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="inputAddress">Address</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
+                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
+                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
+                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
+                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
+                            <input type="hidden" id="poiID" name="poiId" value="3487">
+                        </div>   
+                    </div>
+                    <div class="form-group col-lg-4">
+                        <label for="inputAddress">Address</label><br>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" id="rating" name="rating" value="1"/><label class="form-check-label">1</label>
+                            <input type="radio" id="rating" name="rating" value="2"/><label class="form-check-label">2</label>
+                            <input type="radio" id="rating" name="rating" value="3"/><label class="form-check-label">3</label>
+                            <input type="radio" id="rating" name="rating" value="4"/><label class="form-check-label">4</label>
+                            <input type="radio" id="rating" name="rating" value="5"/><label class="form-check-label">5</label>
+                            <input type="hidden" id="poiID" name="poiId" value="3487">
+                        </div>   
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id="salvar" name="salvar">Salvar</button>
             </form>
-            <hr class="featurette-divider">
-        </div><!-- /.container -->
-
-        <div>
-          <h2 style="text-align: center;">Avaliação Experimental</h2>
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdEQ6H_0oK5UNhcfK194FADq836g4uGHp7h2YRv-Mn29ZKxsQ/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-        
-          <hr class="featurette-divider">
         </div>
-
 
         <!-- FOOTER -->
         <footer class="container">

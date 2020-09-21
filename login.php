@@ -76,12 +76,27 @@
             <form method="POST" action="login_bk.php">
                 <section id="login_div">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10 mx-auto" style="text-align: center;">
+                        <div class="form-group row">
+                            <div class="col-lg-8 mx-auto" style="text-align: center;">
                                 <h2>Login</h2>
-                                <label>Email: </label><input type="email" name="login" id="login" placehold="email" autofocus><br>
-                                <label>Senha: </label><input type="password" name="senha" id="senha" placehold="senha" autofocus><br>
-                                <input type="submit" value="entrar" id="entrar" name="entrar"><br>
+                            </div>
+                        </div>
+                        <div class="form-group row" style="text-align: center;">
+                            <label for="email" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="login" name="login" aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row" style="text-align: center;">
+                            <label for="senha" class="col-sm-2 col-form-label">Senha</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                            </div>
+                        </div>
+                        <div class="form-group row" style="text-align: center;">
+                            <div class="col-sm-12">
+                                <button value="entrar" id="entrar" name="entrar" type="submit" class="btn btn-primary btn-lg ">Entrar</button>
+                                <!--input class="btn btn-primary mb-2" type="submit" value="entrar" id="entrar" name="entrar"><br-->
                             </div>
                         </div>
                     </div>
