@@ -31,7 +31,7 @@
             // Salva os dados encontrados na sessão
             $_SESSION['userId'] = $user_logado['id'];
             $_SESSION['userName'] = $user_logado['login'];
-
+            
             header("Location:avaliacao.php");
 
             
